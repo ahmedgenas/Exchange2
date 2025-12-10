@@ -1,0 +1,7 @@
+{
+  "name": " TAY GROUP Exchange System 5",
+  "description": "A comprehensive inventory exchange management system for TAY GROUP pharmacies, featuring role-based access, automated geolocation-based routing, and AI-powered insights.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

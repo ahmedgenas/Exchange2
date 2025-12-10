@@ -1,0 +1,11 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Development Rules: Allow public read/write access
+    // This resolves "Missing or insufficient permissions" errors when using simulated auth.
+    // WARNING: For production with real Firebase Auth, change this to specific role-based rules.
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
